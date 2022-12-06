@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./images/background4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1; 
+    filter: blur(2px);
+}
+.signup-body {
+	border-radius: 5px;
+	background-color: rgba(145, 122, 122, 0.2);
+	backdrop-filter: saturate(110%) blur(5px);
+	padding: 2rem;
+	text-align: center;
+}
+h1{
+    color: white;
+    margin-bottom: 1.5rem;
+}
+input{
+    display: block;
+    width: 15rem;
+    height: 2.5rem;
+    margin: 1rem 0;
+    outline: none;
+    padding: .8rem;
+    border-radius: .2rem;
+    border: none;
+}
+button{
+    display: block;
+    margin: auto;
+    padding: .7rem .9rem;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(100, 142, 148);
+    border-radius: .2rem;
+    border: none;
+}
+button:hover{
+    background-color: rgb(60, 90, 95);
+}
+input:focus::placeholder{
+    color: rgb(122, 116, 116);
+}
+p{
+    color: rgb(47, 187, 230);
+    margin: .6rem 0;
+    pointer-events: none;
+}
+.sign-up{
+    text-decoration: none;
+    color: rgb(239, 250, 250);
+    display: block;
+    display: inline-block;
+    position: relative;
+}
+.sign-up:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #75a5bd;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    
+  }
+.sign-up:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+  }
+.sign-up:hover{
+    color: #bed2db;
+}
+img {
+	width: 3.5rem;
+	position: absolute;
+	top: -29px;
+	left: 120px;
+}
